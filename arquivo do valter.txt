@@ -1,2 +1,7 @@
 O cajueiro floresceu quatro vezes depios que Martim partiu das praias do ceará.
+<<<<<<< Updated upstream
 A shitara eh gostosa bagarai!
+=======
+
+Rapadura é doce mas não é mole não!
+>>>>>>> Stashed changes
