@@ -1,0 +1,21 @@
+<html>
+<body>
+<button onclick="buscar()">Buscar Categorias </button>
+
+<script>
+function printResponse() {
+	console.log(this.responseText);
+}
+
+function buscar() {
+	var req = new XMLHttpRequest();
+	req.addEventListener("load", printResponse);
+	req.open("POST", "http://localhost:8080/categorias/");
+
+	req.send();
+}
+</script>
+
+</body>
+
+</html>
