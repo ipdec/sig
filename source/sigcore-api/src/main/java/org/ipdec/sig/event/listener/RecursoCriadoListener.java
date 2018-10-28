@@ -16,9 +16,9 @@ public class RecursoCriadoListener implements ApplicationListener<RecursoCriadoE
 	public void onApplicationEvent(RecursoCriadoEvent event) {
 	
 		HttpServletResponse response = event.getResponse();
-		Long codigo = event.getCodigo();
+		Long codigo = event.getId();
 		
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{codigo}")
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("/{id}")
 				.buildAndExpand(codigo).toUri();
 			
 		response.setHeader("Location", uri.toASCIIString());	

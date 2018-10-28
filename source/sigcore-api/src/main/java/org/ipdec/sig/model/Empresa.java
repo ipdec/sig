@@ -19,7 +19,7 @@ public class Empresa {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator="empresa_sequence")
-	@SequenceGenerator(name = "empresa_sequence", sequenceName = "acesso.categoria_codigo_seq", allocationSize = 1)
+	@SequenceGenerator(name = "empresa_sequence", sequenceName = "acesso.empresa_id_empresa_seq", allocationSize = 1)
 	@Column(name="id_empresa")
 	private Long id;
 	
