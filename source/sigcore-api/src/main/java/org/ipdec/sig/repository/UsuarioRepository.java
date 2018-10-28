@@ -2,11 +2,11 @@ package org.ipdec.sig.repository;
 
 import java.util.Optional;
 
-import org.ipdec.sig.model.Usuario;
+import org.ipdec.sig.model.algaworks.UsuarioAlga;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+public interface UsuarioRepository extends JpaRepository<UsuarioAlga, Long> {
 	
-	public Optional<Usuario> findByEmail(String email);
+	public Optional<UsuarioAlga> findByEmail(String email);
 
 }

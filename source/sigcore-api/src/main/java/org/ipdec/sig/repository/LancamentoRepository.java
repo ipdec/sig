@@ -1,6 +1,6 @@
 package org.ipdec.sig.repository;
 
-import org.ipdec.sig.model.Lancamento;
+import org.ipdec.sig.model.algaworks.Lancamento;
 import org.ipdec.sig.repository.lancamento.LancamentoRepositoryQuery;
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.ipdec.sig.event.RecursoCriadoEvent;
-import org.ipdec.sig.model.Categoria;
+import org.ipdec.sig.model.algaworks.Categoria;
 import org.ipdec.sig.repository.CategoriaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;

@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
 import org.ipdec.sig.event.RecursoCriadoEvent;
-import org.ipdec.sig.model.Pessoa;
+import org.ipdec.sig.model.algaworks.Pessoa;
 import org.ipdec.sig.repository.PessoaRepository;
 import org.ipdec.sig.service.PessoaService;
 import org.springframework.beans.factory.annotation.Autowired;

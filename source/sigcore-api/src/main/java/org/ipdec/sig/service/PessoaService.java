@@ -1,6 +1,6 @@
 package org.ipdec.sig.service;
 
-import org.ipdec.sig.model.Pessoa;
+import org.ipdec.sig.model.algaworks.Pessoa;
 import org.ipdec.sig.repository.PessoaRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

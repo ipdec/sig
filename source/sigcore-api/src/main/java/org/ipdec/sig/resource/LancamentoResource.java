@@ -9,7 +9,7 @@ import javax.validation.Valid;
 import org.ipdec.sig.event.RecursoCriadoEvent;
 import org.ipdec.sig.exception.PessoaInexistenteOuInativaException;
 import org.ipdec.sig.exception.AlgamoneyExceptionHandler.Erro;
-import org.ipdec.sig.model.Lancamento;
+import org.ipdec.sig.model.algaworks.Lancamento;
 import org.ipdec.sig.repository.LancamentoRepository;
 import org.ipdec.sig.repository.filter.LancamentoFilter;
 import org.ipdec.sig.repository.projection.ResumoLancamento;

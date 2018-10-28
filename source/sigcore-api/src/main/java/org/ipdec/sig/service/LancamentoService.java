@@ -1,8 +1,8 @@
 package org.ipdec.sig.service;
 
 import org.ipdec.sig.exception.PessoaInexistenteOuInativaException;
-import org.ipdec.sig.model.Lancamento;
-import org.ipdec.sig.model.Pessoa;
+import org.ipdec.sig.model.algaworks.Lancamento;
+import org.ipdec.sig.model.algaworks.Pessoa;
 import org.ipdec.sig.repository.LancamentoRepository;
 import org.ipdec.sig.repository.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;

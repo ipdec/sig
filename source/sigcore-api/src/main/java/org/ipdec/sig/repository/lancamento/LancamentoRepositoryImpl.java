@@ -11,10 +11,10 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 
-import org.ipdec.sig.model.Categoria_;
-import org.ipdec.sig.model.Lancamento;
-import org.ipdec.sig.model.Lancamento_;
-import org.ipdec.sig.model.Pessoa_;
+import org.ipdec.sig.model.algaworks.Categoria_;
+import org.ipdec.sig.model.algaworks.Lancamento;
+import org.ipdec.sig.model.algaworks.Lancamento_;
+import org.ipdec.sig.model.algaworks.Pessoa_;
 import org.ipdec.sig.repository.filter.LancamentoFilter;
 import org.ipdec.sig.repository.projection.ResumoLancamento;
 import org.springframework.data.domain.Page;

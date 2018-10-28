@@ -1,4 +1,4 @@
-package org.ipdec.sig.model;
+package org.ipdec.sig.model.algaworks;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

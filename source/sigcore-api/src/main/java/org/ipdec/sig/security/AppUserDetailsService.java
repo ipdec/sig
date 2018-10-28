@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-import org.ipdec.sig.model.Usuario;
+import org.ipdec.sig.model.algaworks.UsuarioAlga;
 import org.ipdec.sig.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -24,12 +24,12 @@ public class AppUserDetailsService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-		Optional<Usuario> usuarioOptional = usuarioRepository.findByEmail(email);
-		Usuario usuario = usuarioOptional.orElseThrow(() -> new UsernameNotFoundException ("Usuário ou Senha inválidos."));
+		Optional<UsuarioAlga> usuarioOptional = usuarioRepository.findByEmail(email);
+		UsuarioAlga usuario = usuarioOptional.orElseThrow(() -> new UsernameNotFoundException ("Usuário ou Senha inválidos."));
 		return new User(email, usuario.getSenha(), getPermissoes(usuario));
 	}
 
-	private Collection<? extends GrantedAuthority> getPermissoes(Usuario usuario) {
+	private Collection<? extends GrantedAuthority> getPermissoes(UsuarioAlga usuario) {
 		Set<SimpleGrantedAuthority> authorities = new HashSet<>();
 		usuario.getPermissoes().forEach(p -> authorities.add(new SimpleGrantedAuthority(p.getDescricao().toUpperCase())));
 		return authorities;

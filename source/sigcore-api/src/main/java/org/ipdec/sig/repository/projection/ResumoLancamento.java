@@ -3,7 +3,7 @@ package org.ipdec.sig.repository.projection;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-import org.ipdec.sig.model.TipoLancamento;
+import org.ipdec.sig.model.algaworks.TipoLancamento;
 
 import lombok.Data;
 
