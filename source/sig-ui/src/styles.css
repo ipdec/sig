@@ -1,1 +1,73 @@
-/* You can add global styles to this file, and also import other style files */
+.layout-topbar {
+  width: 100%;
+  height: 50px;
+  background-color: #E7EAEC;
+  display: block;
+  padding: 0;
+  height: 50px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9997;
+}
+
+.layout-topbar-logo {
+  height: 50px;
+  display: inline-block;
+  padding: 8px 0;
+  width: 240px;
+  background-color: #273B4A;
+}
+
+.layout-topbar-logo img {
+  height: 34px;
+  padding-left: 15px;
+}
+
+.layout-topbar-menubutton {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  margin-left: 250px;
+  text-align: center;
+  transition: background-color .2s;
+}
+
+.layout-breadcrumb {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.main-content {
+  width: 100%;
+}
+
+body .ui-sidebar {
+  border: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  overflow-y: auto !important;
+}
+
+.ui-sidebar-left.ui-sidebar-sm {
+  width: 240px !important;
+}
+
+.ui-sidebar-left {
+  top: 50px !important;
+}
+
+body .ui-panelmenu .ui-panelmenu-header {
+  border: 0 !important;
+}
+
+body .ui-panelmenu .ui-panelmenu-panel {
+  margin-top: 0 !important;
+}
+
+body .ui-panelmenu .ui-panelmenu-header > a {
+  border: 0 !important;
+}
+
+
